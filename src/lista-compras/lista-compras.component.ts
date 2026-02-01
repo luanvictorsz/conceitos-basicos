@@ -16,7 +16,7 @@ export class ListaComprasComponent {
   adicionarItem(){
     let addItem = new itemLista();
     addItem.nome = this.item;
-    addItem.id = this.item.length + 1;
+    addItem.id = this.lista.length + 1;
 
     this.lista.push(addItem)
     this.item = '';
