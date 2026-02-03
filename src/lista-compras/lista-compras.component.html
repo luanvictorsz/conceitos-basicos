@@ -10,6 +10,7 @@
             placeholder="adicionar item"
         />
         <button type="submit" (click)="adicionarItem()">Adicionar</button>
+        <button type="button" (click)="limparLista()">Limpar Lista</button>
     </form>
     <table>
         <thead>
@@ -19,7 +20,7 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody> 
 
             @for( elemento of lista; track elemento.id){
                  <tr>
